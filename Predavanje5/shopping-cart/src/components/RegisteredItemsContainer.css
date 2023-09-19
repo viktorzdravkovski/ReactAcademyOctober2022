@@ -1,0 +1,22 @@
+.container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.item-container {
+    display: flex;
+    margin: 50px;
+    flex-direction: column;
+    width: 40%;
+    height: 500px;
+    background-color: purple;
+    border: 2px solid black;
+    padding: 10px;
+    overflow: auto;
+}
+
+.btn-sort {
+    width: 10%;
+}
