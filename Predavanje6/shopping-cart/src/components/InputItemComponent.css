@@ -1,0 +1,20 @@
+.input-form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: wheat;
+    border: 2px solid purple;
+    border-radius: 25px;
+    padding: 10px;
+}
+
+.btn-submit {
+    margin-top: 10px;
+    width: 40%;
+}

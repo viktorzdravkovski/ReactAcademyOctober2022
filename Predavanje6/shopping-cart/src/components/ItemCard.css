@@ -1,0 +1,24 @@
+.registered-item-container {
+    display: block;
+    border: 1px solid black;
+    border-radius: 25px;
+    padding: 5px 20px;
+    margin-bottom: 10px;
+    background-color: wheat;
+}
+
+.registered-item {
+    display: flex;
+}
+
+.registered-item-description {
+    width: 45%;
+    margin-right: 5px;
+}
+
+.registered-item-price {
+    display: flex;
+    width: 45%;
+    justify-content: center;
+    align-items: center;
+}
