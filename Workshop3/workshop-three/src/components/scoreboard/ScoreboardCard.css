@@ -1,0 +1,19 @@
+.scoreboard-card-container {
+    display: flex;
+    align-items: flex-start;
+    background-color: #ffc73c;
+    margin: 10px;
+    border: 1px solid #c9b286;
+    border-radius: 10px;
+    width: 80%;
+}
+
+.scoreboard-card-name {
+    width: 50%;
+    padding: 10px;
+}
+
+.scoreboard-card-points {
+    width: 50%;
+    padding: 10px;
+}

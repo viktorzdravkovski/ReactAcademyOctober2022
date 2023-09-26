@@ -1,0 +1,18 @@
+.scoreboard-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border: 2px solid black;
+    background-color: wheat;
+    height: 500px;
+    width: 250px;
+    overflow: auto;
+    margin-bottom: 10%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
