@@ -1,0 +1,35 @@
+.container {
+    border: 1px solid wheat;
+    border-radius: 10px;
+    background: wheat;
+    height: 30%;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.matcher-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 50%;
+}
+
+.matcher-container h3 {
+    height: 20%;
+    width: 100%;
+    text-align: center;
+}
+
+.matcher-container.valid h3 {
+    color: #13c506;
+    border: 1px solid #13c506;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 50%;
+}

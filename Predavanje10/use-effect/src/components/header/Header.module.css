@@ -1,0 +1,11 @@
+.header {
+    display: flex;
+    justify-content: space-around;
+    background-color: mediumpurple;
+    width: 100%;
+}
+
+.header h3 {
+    border: 1px solid black;
+    padding: 0 5px;
+}

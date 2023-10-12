@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="2a35d38c-1754-4164-ac73-2fe7cc57f1d7" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../Predavanje8/react-styling-components/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Predavanje8/react-styling-components/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Predavanje8/react-styling-components/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Predavanje8/react-styling-components/src/components/Button.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Predavanje8/react-styling-components/src/components/Buttons.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Predavanje8/react-styling-components/src/components/CustomFormCSSModules.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Predavanje8/react-styling-components/src/components/CustomFormCSSModules.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Predavanje8/react-styling-components/src/components/CustomFormStyledComponents.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/InputForm.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/InputForm.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/NameContainer.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/NameContainer.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/PersonCard.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Workshop4/conditional-styling/src/components/TextContainer.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Workshop4/conditional-styling/src/components/TextContainerModules.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Workshop4/conditional-styling/src/components/TextContainerModules.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Predavanje7/react-styling-components/.idea/.gitignore" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
+  "associatedIndex": 4
+}]]></component>
+  <component name="ProjectId" id="2WZvmYzOomSzgyz4nfSiQW6mHzu" />
+  <component name="ProjectViewState">
+    <option name="autoscrollToSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/vixam/Documents/CreativeHubProjects/Predavanje10/predavanje-deset",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2a35d38c-1754-4164-ac73-2fe7cc57f1d7" name="Changes" comment="" />
+      <created>1696953079892</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1696953079892</updated>
+      <workItem from="1696953082779" duration="48000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

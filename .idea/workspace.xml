@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="9415b510-43d5-48db-9079-b28d420800e2" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Predavanje7/materijal-chas-react-styling/src/components/Button.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Predavanje7/materijal-chas-react-styling/src/components/Button.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Predavanje7/materijal-chas-react-styling/src/components/Card.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Predavanje7/materijal-chas-react-styling/src/components/Card.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Predavanje7/materijal-chas-react-styling/src/components/CardContainer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Predavanje7/materijal-chas-react-styling/src/components/CustomForm.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Predavanje7/materijal-chas-react-styling/src/components/CustomForm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Predavanje8/react-styling-components/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Predavanje8/react-styling-components/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Predavanje8/react-styling-components/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Predavanje8/react-styling-components/src/components/Button.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Predavanje8/react-styling-components/src/components/Buttons.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Predavanje8/react-styling-components/src/components/CustomFormCSSModules.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Predavanje8/react-styling-components/src/components/CustomFormCSSModules.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Predavanje8/react-styling-components/src/components/CustomFormStyledComponents.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Workshop3/materijal-chas-workshop-three-solution/src/components/input-form/InputForm.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Workshop3/materijal-chas-workshop-three-solution/src/components/input-form/InputForm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Workshop3/materijal-chas-workshop-three-solution/src/components/scoreboard/ScoreboardCard.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Workshop3/materijal-chas-workshop-three-solution/src/components/scoreboard/ScoreboardCard.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Workshop3/materijal-chas-workshop-three-solution/src/components/scoreboard/ScoreboardContainer.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Workshop3/materijal-chas-workshop-three-solution/src/components/scoreboard/ScoreboardContainer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Workshop4/conditional-styling/src/components/TextContainer.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Workshop4/conditional-styling/src/components/TextContainerModules.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Workshop4/conditional-styling/src/components/TextContainerModules.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Predavanje7/materijal-chas-react-styling/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Predavanje7/materijal-chas-react-styling/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Predavanje7/materijal-chas-react-styling/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Predavanje7/materijal-chas-react-styling/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Predavanje7/materijal-chas-react-styling/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Predavanje7/materijal-chas-react-styling/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/Predavanje7/materijal-chas-react-styling/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Predavanje7/materijal-chas-react-styling/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/Predavanje7/materijal-chas-react-styling/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Predavanje7/react-styling-components/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Workshop3/materijal-chas-workshop-three-solution/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Workshop3/materijal-chas-workshop-three-solution/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Workshop3/materijal-chas-workshop-three-solution/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Workshop3/materijal-chas-workshop-three-solution/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Workshop3/materijal-chas-workshop-three-solution/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/Workshop3/materijal-chas-workshop-three-solution/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Workshop3/materijal-chas-workshop-three-solution/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/Workshop3/materijal-chas-workshop-three-solution/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Workshop3/materijal-chas-workshop-three-solution/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/Workshop3/materijal-chas-workshop-three-solution/src/App.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 3
+}]]></component>
+  <component name="ProjectId" id="2WLvFiyr0UAb8bI1SuAiSmMlaCI" />
+  <component name="ProjectViewState">
+    <option name="autoscrollToSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/vixam/Documents/CreativeHubProjects",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9415b510-43d5-48db-9079-b28d420800e2" name="Changes" comment="" />
+      <created>1696524573033</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1696524573033</updated>
+      <workItem from="1696524574464" duration="7000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
