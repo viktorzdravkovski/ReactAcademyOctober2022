@@ -1,0 +1,38 @@
+# Exercise 1
+
+1. Inicijalizacija na varijabla sum = 0,
+   Inicijalizacija na varijabla counter = 1
+2. Input od user vo varijabla n
+3. Proverka dali counter <= n
+4. Ako e tochno, sum = sum + counter
+   counter = counter + 1
+5. Ako ne e tochno, isprintaj ja sumata, zavrsuva programata
+
+Example flow
+  n = 5
+	1. sum = 1, counter = 2
+	2. sum = 3, counter = 3
+	3. sum = 6, counter = 4
+	4. sum = 10, counter = 5
+	5. sum = 15, counter = 6
+	6. Print 15
+
+# Exercise 2
+
+1. Inicijalizacija na varijabli evenSum = 0, oddSum = 0, counter = 1
+2. Input od user vo varijabla n
+3. Proverka dali counter <= n
+4. Ako e tochno (3):
+4.1 Proverka dali counter e paren broj
+4.2 Ako e tochno, evenSum = evenSum + counter, counter = counter + 1
+4.3 Ako ne e tochno, oddSum = oddSum + counter, counter = counter + 1
+5. Ako ne e tochno (3), togas isprintaj gi evenSum i oddSum
+
+Example flow
+ n = 5, evenSum = 0, oddSum = 0, counter = 1
+ 	1. oddSum = 1, counter = 2
+ 	2. evenSum = 2, counter = 3
+ 	3. oddSum = 4, counter = 4
+ 	4. evenSum = 6, counter = 5
+ 	5. oddSum = 9, counter = 6
+ 	6. Print 9, Print 6

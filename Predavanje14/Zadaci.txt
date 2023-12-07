@@ -1,0 +1,18 @@
+Exercises
+
+1X. Sum of n numbers
+2X. Sum of all even/odd n numbers
+3X. Food ordering - The user inputs numbers from the keyboard until he enters "#". After he has entered a "#", print all the numbers that the user has entered, or if he hasn't entered any numbers, print "Empty order.".
+4X. For given n number print 1 to n * per row
+5X. Average of 2 numbers ( a = 5, b = 3, average = (5+3) / 2 )
+6X. Area of rectangle (Length * Width)
+7X. Area of circle (pi * r * r)
+8X. Celsius to Fahrenheit ((C * 9/5) + 32)
+9X. Draw a flowchart and write its program to read two positive integers, determine which has greater value and then print the greater value or any of them if they are even.
+10X. Write a program for ptinting the sum of the following serial: 3 + 5 + 7 + 9 + …. + 159 = ?
+11X. Write a program of the following serial: 2 + 5 + 10 + 17 + 26 + 37+ … + 145 = ?
+12X. For given n number print 1 to n * per row, and then n to 1 *
+13X. Write a program to identify if the water is in an ice , liquid or gaseous form for a given temperatures from the user.
+
+Homework1: 5, 6, 9
+Homework2: 12

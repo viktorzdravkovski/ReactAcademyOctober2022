@@ -1,0 +1,86 @@
+# Exercise 7 - Area of circle (pi * r * r)
+
+1. Zemi input od user za radiusot na krugot i smesti go vo varijabla "r"
+2. Pomnozhi go "r" so samiot sebesi za da dobieme "r" na kvadrat i so pi = 3,14
+3. Isprintaj go rezultatot na ekran
+
+Example flow:
+	r = 5
+	area = 5*5*3.14 = 78.5
+	print 78.5
+
+
+# Exercise 10 - Write a program for ptinting the sum of the following serial: 3 + 5 + 7 + 9 + …. + 159 = ?
+
+1. Deklarirame nekoja varijabla a = 3, i varijabla sum = 0
+2. Dodadi ja a na sum i zgolemi ja a za +2
+3. Proveri dali a > 159
+4. Ako e tochno, isprintaj ja sumata shto se naogja vo sum
+5. Ako ne e tochno, vrati se na chekor (2)
+
+Example flow:
+	1. a = 3, sum = 0
+	2. sum = 0 + 3 = 3, a = 3 + 2 = 5
+	3. 5 > 159 = False, -> chekor (2)
+	4. sum = 3 + 5 = 8, a = 5 + 2 = 7
+	5. Istata proverka od chekor 3
+	...
+	6. sum = x, a = 159 + 2 = 161
+	7. 161 > 159 = True, isprintaj sum na ekran
+
+
+# Exercise 4 - For given n number print 1 to n * per row
+
+n = 5
+*
+**
+***
+****
+*****
+
+1. Input od user za n
+2. Inicijalizacija na counter = 1
+3. Isprintaj tolkav broj na * kolku shto ima vo counter varijablata
+3.1 Inicijalizacija na varijabla i = 1
+3.2 Proverka dali i > counter
+3.3 Ako ne e tochno, isprintaj * i zgolemi go i za 1 (i = i + 1), i vrati se na chekor (3.2)
+3.4 Ako e tochno
+3.4.1 isprintaj nov red
+3.4.2 zgolemi go counter za 1
+3.4.3 proveri dali counter > n
+4. Ako ne e tochno, vrati se na chekor (3)
+
+
+Example flow:
+	n = 3
+	1. counter = 1
+	2. i = 1
+	3. i > counter -> 1 > 1, False
+	4. i = 1 + 1, i = 2
+	5. i > counter -> 2 > 1, True
+	6. counter = 1 + 1 -> counter = 2
+	7. counter > n -> 2 > 3, False
+	8. i = 1
+	9. i > counter -> 1 > 2, False
+	10. i = 1 + 1, i = 2
+	11. i > counter -> 2 > 2, False
+	12. i = 2 + 1, i = 3
+	13. i > counter -> 3 > 2, True
+	14. counter = 2 + 1, counter = 3
+	15. counter > n -> 3 > 3, False
+	16. i = 1
+	17. i > counter -> 1 > 3, False
+	18. i = 1 + 1, i = 2
+	19. i > counter -> 2 > 3, False
+	20. i = 2 + 1, i = 3
+	21. i > counter -> 3 > 3, False
+	22. i = 3 + 1, i = 4
+	23. i > counter -> 4 > 3, True
+	24. counter = 3 + 1, counter = 4
+	25. counter > n -> 4 > 3, True
+
+
+Output na screen:
+*
+**
+***

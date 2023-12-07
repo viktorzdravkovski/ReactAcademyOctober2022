@@ -1,0 +1,15 @@
+.add-form-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.add-form-item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.add-form-container button {
+    margin-top: 10px;
+    max-width: 50%;
+    margin-left: 30%;
+}

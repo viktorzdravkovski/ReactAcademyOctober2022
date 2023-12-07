@@ -1,0 +1,20 @@
+.name {
+    width: 30%;
+}
+
+.person-info {
+    margin-right: 10px;
+    font-size: 12px;
+}
+
+.homeworld-btn {
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 5px 10px;
+    background-color: #c6ece2;
+    cursor: pointer;
+}
+
+.homeworld-btn:hover {
+    background-color: #d7eee8;
+}
