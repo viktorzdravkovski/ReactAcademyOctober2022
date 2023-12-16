@@ -1,0 +1,59 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.text {
+  border: 2px solid black;
+  height: 100px;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  margin-bottom: 4rem;
+}
+
+.btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid mediumpurple;
+  width: 200px;
+  height: 300px;
+  padding: 10px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 50%;
+}
+
+.paragraphs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 50%;
+}
+
+.btn button {
+  padding: 10px 50px;
+  border: none;
+  cursor: pointer;
+}
+
+.users {
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  overflow: auto;
+  margin-top: 2rem;
+  border: 2px solid black;
+}
