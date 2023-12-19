@@ -40,4 +40,19 @@ describe("Greeting component", () => {
     const clicked = screen.getByText("Clicked", {exact: false});
     expect(clicked).toBeInTheDocument();
   });
+
+  test("does not render 'nice to meet you' when button was clicked", () => {
+    // Arrange
+    render(<Greeting/>);
+
+    // Act
+    const buttonElement = screen.getByRole("button");
+    act(() => {
+      userEvent.click(buttonElement);
+    });
+
+    // Assert
+    const niceToMeetYou = screen.queryByText("nice to meet you", {exact: false});
+    expect(niceToMeetYou).not.toBeInTheDocument();
+  });
 });
