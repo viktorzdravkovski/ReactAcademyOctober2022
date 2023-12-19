@@ -1,0 +1,21 @@
+npm install react-router-dom
+https://reactrouter.com/en/main
+
+Adding routing:
+	#1: Define routes we support, and which components should be loaded for different paths
+
+	#2: Activate router and load the definitions defined in first step
+
+	#3: Make sure we have components we wanna load and provide means of navigating between those pages
+
+createBrowserRouter
+RouterProvider
+createRoutesFromElements, Route
+
+<Link to="/"></Link>
+
+<Root/>, children property, Outlet
+
+errorElement
+
+NavLink so isActive
