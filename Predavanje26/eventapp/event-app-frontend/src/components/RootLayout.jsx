@@ -1,9 +1,10 @@
-import { Outlet, useNavigate } from "react-router-dom";
 import Navbar from "./Navbar";
-import { SpeedDial, SpeedDialAction, SpeedDialIcon } from "@mui/material";
+import { Outlet, useNavigate } from "react-router-dom";
+import { SpeedDial, SpeedDialAction } from "@mui/material";
 import EventIcon from "@mui/icons-material/Event";
+import SpeedDialIcon from "@mui/material/SpeedDialIcon";
 
-const Root = () => {
+const RootLayout = () => {
   const navigate = useNavigate();
 
   const createNewEventNavigationHandler = () => {
@@ -16,8 +17,8 @@ const Root = () => {
       <Outlet />
       <SpeedDial
         ariaLabel="SpeedDial"
-        sx={{ position: "absolute", bottom: 16, right: 16 }}
         icon={<SpeedDialIcon />}
+        sx={{ position: "absolute", bottom: 15, right: 15 }}
       >
         <SpeedDialAction
           icon={<EventIcon />}
@@ -29,4 +30,4 @@ const Root = () => {
   );
 };
 
-export default Root;
+export default RootLayout;

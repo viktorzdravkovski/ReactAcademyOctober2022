@@ -1,22 +1,30 @@
 import "./App.css";
 import EventsPage, { loader as eventsLoader } from "./components/EventsPage";
-import { createTheme, styled, ThemeProvider } from "@mui/material";
+import EventCreate from "./components/EventCreate";
+import { styled, createTheme, ThemeProvider, Button } from "@mui/material";
 import { blueGrey } from "@mui/material/colors";
 import { useState } from "react";
 import EventDetail, {
   loader as eventDetailLoader,
 } from "./components/EventDetail";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import {
+  createBrowserRouter,
+  RouterProvider,
+  createRoutesFromElements,
+  Route,
+} from "react-router-dom";
 import HomePage from "./components/HomePage";
-import Root from "./components/Root";
+import RootLayout from "./components/RootLayout";
 import ErrorPage from "./components/ErrorPage";
-import EventCreate, {
-  action as eventCreateAction,
-} from "./components/EventCreate";
 import EventEdit from "./components/EventEdit";
 
 const StyledContainer = styled("div")(({ theme }) => ({
   backgroundColor: theme.palette.background.default,
+  height: "100vh",
+  display: "flex",
+  flexDirection: "column",
+  justifyContent: "flex-start",
+  alignItems: "center",
 }));
 
 const theme = createTheme({
@@ -25,7 +33,7 @@ const theme = createTheme({
       default: blueGrey[100],
     },
     primary: {
-      main: "#304ffe",
+      main: blueGrey[500],
     },
   },
   typography: {
@@ -36,7 +44,6 @@ const theme = createTheme({
 // const routeDefinitions = createRoutesFromElements(
 //   <Route>
 //     <Route path="/" element={<HomePage />} />
-//     <Route path="/events" element={<EventsPage />} />
 //   </Route>,
 // );
 //
@@ -45,7 +52,7 @@ const theme = createTheme({
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Root />,
+    element: <RootLayout />,
     errorElement: <ErrorPage />,
     children: [
       {
@@ -53,6 +60,7 @@ const router = createBrowserRouter([
         element: <HomePage />,
       },
       {
+        // /events
         path: "events",
         children: [
           {
@@ -61,18 +69,25 @@ const router = createBrowserRouter([
             loader: eventsLoader,
           },
           {
+            // /events/new
             path: "new",
             element: <EventCreate />,
-            action: eventCreateAction,
           },
           {
+            // /events/:eventId
             path: ":eventId",
-            element: <EventDetail />,
-            loader: eventDetailLoader,
-          },
-          {
-            path: ":eventId/edit",
-            element: <EventEdit />,
+            children: [
+              {
+                index: true,
+                element: <EventDetail />,
+                loader: eventDetailLoader,
+              },
+              {
+                // /events/:eventId/edit
+                path: "edit",
+                element: <EventEdit />,
+              },
+            ],
           },
         ],
       },
@@ -91,23 +106,7 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <StyledContainer>
-        <RouterProvider router={router}>
-          {/*<Button*/}
-          {/*  variant="contained"*/}
-          {/*  color="warning"*/}
-          {/*  sx={{ margin: "3% 0" }}*/}
-          {/*  onClick={toggleEventCreationMode}*/}
-          {/*>*/}
-          {/*  {eventCreationMode ? "Cancel" : "Create Event"}*/}
-          {/*</Button>*/}
-          {/*{!eventId && !eventCreationMode && (*/}
-          {/*  <EventsPage setEventId={setEventId} />*/}
-          {/*)}*/}
-          {/*{eventId && !eventCreationMode && (*/}
-          {/*  <EventDetail eventId={eventId} setEventId={setEventId} />*/}
-          {/*)}*/}
-          {/*{eventCreationMode && <EventCreate />}*/}
-        </RouterProvider>
+        <RouterProvider router={router}></RouterProvider>
       </StyledContainer>
     </ThemeProvider>
   );

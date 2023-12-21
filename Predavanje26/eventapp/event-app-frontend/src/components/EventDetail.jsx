@@ -1,18 +1,18 @@
-import { Button, Container, Stack, Typography } from "@mui/material";
-import { useState } from "react";
-import { Link, useLoaderData, useNavigate } from "react-router-dom";
+import { Button, Container, Stack, TextField, Typography } from "@mui/material";
+import { useEffect, useState } from "react";
+import { Link, useLoaderData, useNavigate, useParams } from "react-router-dom";
 
 const EventDetail = () => {
-  const navigate = useNavigate();
   const data = useLoaderData();
   const event = data.event;
+  const navigate = useNavigate();
 
   const toggleEditMode = () => {
     navigate("edit");
   };
 
   return (
-    <Stack justifyContent="center" alignItems="center" mt={5}>
+    <Stack justifyContent="center" alignItems="center">
       <Container sx={{ textAlign: "center" }}>
         <Typography>{event.title}</Typography>
       </Container>
@@ -20,7 +20,7 @@ const EventDetail = () => {
         <img
           src={event.image}
           alt={event.title}
-          style={{ height: "10%", maxWidth: "100%" }}
+          style={{ height: "40%", maxWidth: "100%" }}
         />
         <Typography variant="body2">{event.date}</Typography>
         <Typography variant="subject2">{event.description}</Typography>
@@ -29,15 +29,11 @@ const EventDetail = () => {
         <Button variant="contained" onClick={toggleEditMode}>
           Edit event
         </Button>
-        <Button variant="contained" color="secondary">
-          <Link
-            to={".."}
-            style={{ textDecoration: "none", color: "white" }}
-            relative="path"
-          >
+        <Link to=".." relative="path">
+          <Button variant="contained" color="secondary">
             Back to events
-          </Link>
-        </Button>
+          </Button>
+        </Link>
       </Stack>
     </Stack>
   );
