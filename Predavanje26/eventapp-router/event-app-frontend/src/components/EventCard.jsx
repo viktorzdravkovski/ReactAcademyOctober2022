@@ -8,7 +8,7 @@ import {
 import { useNavigate } from "react-router-dom";
 
 const EventCard = (props) => {
-  const { event, setEventId } = props;
+  const { event } = props;
   const navigate = useNavigate();
 
   const onClickHandler = () => {

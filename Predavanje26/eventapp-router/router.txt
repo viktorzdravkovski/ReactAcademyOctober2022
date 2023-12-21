@@ -19,3 +19,19 @@ createRoutesFromElements, Route
 errorElement
 
 NavLink so isActive
+
+useParams
+
+useNavigate
+
+--------
+
+loader i useLoaderData
+
+useNavigation
+
+errorHandling i json()
+
+useRouterLoaderData
+
+useSubmit

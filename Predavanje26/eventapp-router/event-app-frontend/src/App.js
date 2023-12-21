@@ -1,19 +1,19 @@
 import "./App.css";
-import EventsPage from "./components/EventsPage";
-import EventCreate from "./components/EventCreate";
-import { styled, createTheme, ThemeProvider, Button } from "@mui/material";
+import EventsPage, { loader as eventsLoader } from "./components/EventsPage";
+import { createTheme, styled, ThemeProvider } from "@mui/material";
 import { blueGrey } from "@mui/material/colors";
 import { useState } from "react";
-import EventDetail from "./components/EventDetail";
-import {
-  createBrowserRouter,
-  RouterProvider,
-  createRoutesFromElements,
-  Route,
-} from "react-router-dom";
+import EventDetail, {
+  loader as eventDetailLoader,
+} from "./components/EventDetail";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import HomePage from "./components/HomePage";
 import Root from "./components/Root";
 import ErrorPage from "./components/ErrorPage";
+import EventCreate, {
+  action as eventCreateAction,
+} from "./components/EventCreate";
+import EventEdit from "./components/EventEdit";
 
 const StyledContainer = styled("div")(({ theme }) => ({
   backgroundColor: theme.palette.background.default,
@@ -25,7 +25,7 @@ const theme = createTheme({
       default: blueGrey[100],
     },
     primary: {
-      main: blueGrey[500],
+      main: "#304ffe",
     },
   },
   typography: {
@@ -54,11 +54,27 @@ const router = createBrowserRouter([
       },
       {
         path: "events",
-        element: <EventsPage />,
-      },
-      {
-        path: "events/:eventId",
-        element: <EventDetail />,
+        children: [
+          {
+            index: true,
+            element: <EventsPage />,
+            loader: eventsLoader,
+          },
+          {
+            path: "new",
+            element: <EventCreate />,
+            action: eventCreateAction,
+          },
+          {
+            path: ":eventId",
+            element: <EventDetail />,
+            loader: eventDetailLoader,
+          },
+          {
+            path: ":eventId/edit",
+            element: <EventEdit />,
+          },
+        ],
       },
     ],
   },

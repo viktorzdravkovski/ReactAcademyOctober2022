@@ -52,25 +52,6 @@ const Navbar = () => {
     <AppBar position="static" sx={{ backgroundColor: "primary.main" }}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <AdbIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} />
-          <Typography
-            variant="h6"
-            noWrap
-            component="a"
-            href="#app-bar-with-responsive-menu"
-            sx={{
-              mr: 2,
-              display: { xs: "none", md: "flex" },
-              fontFamily: "monospace",
-              fontWeight: 700,
-              letterSpacing: ".3rem",
-              color: "inherit",
-              textDecoration: "none",
-            }}
-          >
-            LOGO
-          </Typography>
-
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
             <IconButton
               size="large"
@@ -143,11 +124,14 @@ const Navbar = () => {
                 to={page.url}
                 style={({ isActive }) => ({
                   color: "white",
-                  textDecoration: isActive ? "underline" : "none",
-                  fontSize: "x-large",
+                  textDecoration: "none",
+                  borderBottom: isActive ? "1px solid white" : "none",
+                  paddingBottom: "2px",
                 })}
               >
-                {page.name}
+                <Typography variant="h5" component="div">
+                  {page.name}
+                </Typography>
               </NavLink>
             ))}
           </Box>

@@ -1,18 +1,10 @@
 import { Container, Grid } from "@mui/material";
 import EventCard from "./EventCard";
-import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLoaderData } from "react-router-dom";
 
-const EventsPage = (props) => {
-  const [events, setEvents] = useState([]);
-
-  useEffect(() => {
-    fetch("http://localhost:8080/events")
-      .then((response) => response.json())
-      .then((response) => {
-        setEvents(response.events);
-      });
-  }, []);
+const EventsPage = () => {
+  const data = useLoaderData();
+  const events = data.events;
 
   return (
     <Container
@@ -21,6 +13,8 @@ const EventsPage = (props) => {
         display: "flex",
         height: "80%",
         alignItems: "center",
+        flexDirection: "column",
+        marginTop: "1%",
       }}
     >
       <Grid container justifyContent="center" columnGap={5} rowGap={5}>
@@ -28,7 +22,7 @@ const EventsPage = (props) => {
           return (
             <Grid item key={event.id} xs={12} md={3}>
               <Link to={event.id} style={{ textDecoration: "none" }}>
-                <EventCard event={event} setEventId={props.setEventId} />
+                <EventCard event={event} />
               </Link>
             </Grid>
           );
@@ -39,3 +33,7 @@ const EventsPage = (props) => {
 };
 
 export default EventsPage;
+
+export const loader = () => {
+  return fetch("http://localhost:8080/events");
+};
