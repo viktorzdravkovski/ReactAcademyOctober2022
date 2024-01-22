@@ -1,59 +1,78 @@
-// const { NotFoundError } = require("../util/errors");
-import { v4 } from "uuid";
-import { readData, writeData } from "./util.js";
+import { v4 as generateId } from "uuid";
+import { readFromMeals, writeToMeals } from "./util.js";
+import { NotFoundError } from "../util/NotFoundError.js";
+import { isValidDate, isValidText } from "../util/validation.js";
 
-export const getAll = async () => {
-  const storedData = await readData();
-  // if (!storedData.meals) {
-  //   throw new NotFoundError("Could not find any events.");
-  // }
-  return storedData.meals;
+export const getAllMeals = async () => {
+  const data = await readFromMeals();
+  if (!data.meals) {
+    throw new NotFoundError("Could not find any meals.");
+  }
+  return data.meals;
 };
 
-// async function get(id) {
-//   const storedData = await readData();
-//   if (!storedData.events || storedData.events.length === 0) {
-//     throw new NotFoundError("Could not find any events.");
-//   }
-//
-//   const event = storedData.events.find((ev) => ev.id === id);
-//   if (!event) {
-//     throw new NotFoundError("Could not find event for id " + id);
-//   }
-//
-//   return event;
-// }
-//
-// async function add(data) {
-//   const storedData = await readData();
-//   storedData.events.unshift({ ...data, id: generateId() });
-//   await writeData(storedData);
-// }
-//
-// async function replace(id, data) {
-//   const storedData = await readData();
-//   if (!storedData.events || storedData.events.length === 0) {
-//     throw new NotFoundError("Could not find any events.");
-//   }
-//
-//   const index = storedData.events.findIndex((ev) => ev.id === id);
-//   if (index < 0) {
-//     throw new NotFoundError("Could not find event for id " + id);
-//   }
-//
-//   storedData.events[index] = { ...data, id };
-//
-//   await writeData(storedData);
-// }
-//
-// async function remove(id) {
-//   const storedData = await readData();
-//   const updatedData = storedData.events.filter((ev) => ev.id !== id);
-//   await writeData({ ...storedData, events: updatedData });
-// }
-//
-// exports.getAll = getAll;
-// exports.get = get;
-// exports.add = add;
-// exports.replace = replace;
-// exports.remove = remove;
+export const getMeal = async (id) => {
+  const data = await readFromMeals();
+  if (!data.meals || data.meals.length === 0) {
+    throw new NotFoundError("Could not find any meals.");
+  }
+
+  const meal = data.meals.find((meal) => meal.id === id);
+  if (!meal) {
+    throw new NotFoundError("Could not find meal for id " + id);
+  }
+
+  return meal;
+};
+
+export const addMeal = async (meal) => {
+  const data = await readFromMeals();
+  data.meals.unshift({ id: generateId(), ...meal });
+  await writeToMeals(data);
+};
+
+export const replaceMeal = async (id, meal) => {
+  const data = await readFromMeals();
+  if (!data.meals || data.meals.length === 0) {
+    throw new NotFoundError("Could not find any meals.");
+  }
+
+  const index = data.meals.findIndex((m) => m.id === id);
+  if (index < 0) {
+    throw new NotFoundError("Could not find meal for id " + id);
+  }
+
+  data.meals[index] = { id, ...meal };
+
+  await writeToMeals(data);
+};
+
+export const deleteMeal = async (id) => {
+  const data = await readFromMeals();
+  const meal = data.meals.find((meal) => meal.id === id);
+
+  if (!meal) {
+    throw new NotFoundError("Could not find meal for id " + id);
+  }
+
+  const updatedData = data.meals.filter((meal) => meal.id !== id);
+  await writeToMeals({ ...data, meals: updatedData });
+};
+
+export const validateMeal = (meal) => {
+  let errors = [];
+
+  if (!isValidText(meal.category)) {
+    errors.push("Invalid category.");
+  }
+
+  if (!isValidDate(meal.date)) {
+    errors.push("Invalid date.");
+  }
+
+  if (meal.mealItemList.length === 0) {
+    errors.push("Meal Items cannot be empty.");
+  }
+
+  return errors;
+};
